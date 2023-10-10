@@ -1,0 +1,37 @@
+# Módulos de Node.js
+node_modules/
+
+# Archivo de bloqueo de versiones npm
+package-lock.json
+package.json
+
+# Carpeta de módulos de NPM (si estás usando Yarn, puedes omitir esto)
+npm-debug.log
+
+# Carpeta generada por npm para almacenar archivos temporales (si estás usando Yarn, puedes omitir esto)
+.npm/
+
+# Archivo de configuración de VSCode
+.vscode/
+
+# Carpetas generadas por IDE y editores de código
+.idea/
+.vscode/
+
+# Archivo de registro
+logs/
+*.log
+
+# Archivos de respaldo y temporales
+*.bak
+*.swp
+*~
+
+# Variables de entorno locales
+.env
+
+# Archivos de compilación y resultados de construcción
+dist/
+build/
+
+# Dependiendo de tu entorno y configuración, es posible que desees ignorar más archivos o carpetas específicas.

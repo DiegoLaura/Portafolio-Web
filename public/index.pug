@@ -1,0 +1,183 @@
+doctype html
+html
+
+  head
+    title Carlos - Desarrollador FullStack
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    link(rel="stylesheet", href="assets/css/main.css")
+    noscript
+      link(rel="stylesheet", href="assets/css/noscript.css")
+
+  body(class="is-preload")
+
+    // Sidebar
+    section#sidebar
+      div.inner
+        nav
+          ul
+            li
+              a(href="#intro") Inicio
+            li
+              a(href="#one") Sobre mi
+            li
+              a(href="#two") Proyectos
+            li
+              a(href="#three") Contactame
+
+    // Wrapper
+    #wrapper
+
+      // Intro
+      section#intro.wrapper.style1.fullscreen.fade-up
+        div.inner
+          div.background-image
+          h1 Hola, soy Carlos, un 
+            span(style="color: rgb(208, 0, 156);") FullStack Developer
+          p(style="margin-top: 50px;") Soy un apasionado Desarrollador FullStack de 19 años, actualmente en el 5to
+            ciclo de mi carrera en Diseño y Desarrollo de Software. Durante mi formación, tuve la oportunidad de
+            realizar una pasantía en Oracle Perú S.A., donde adquirí experiencia invaluable en el mundo real.
+          ul.actions
+            li
+              a(href="#one", class="button scrolly") Leer mas
+
+
+      // One
+      section#one.wrapper.style2.spotlights
+        section
+          a(href="#" class="image")
+            img(src="images/experiencia.png", alt="", data-position="center center")
+          div.content
+            div.inner
+              h2 Experiencia
+              p En mi trayectoria como desarrollador, he tenido la oportunidad de trabajar en proyectos desafiantes que me han permitido adquirir experiencia valiosa. Mi enfoque en la resolución de problemas y la programación eficiente me ha ayudado a enfrentar diversos desafíos en el campo del desarrollo web y de software.
+              ul.actions
+                li
+                  a(href="experiencia.pug", class="button") Leer mas
+        section
+          a(href="#" class="image")
+            img(src="images/Tecsup.jpg", alt="", data-position="top center")
+          div.content
+            div.inner
+              h2 Educacion
+              p Mi búsqueda constante de conocimiento me llevó a inscribirme en el programa de Diseño y Desarrollo de Software en Tecsup, donde he estado adquiriendo una base sólida en tecnología y programación. Estoy comprometido con la excelencia académica y siempre estoy ansioso por aprender más en esta emocionante disciplina.
+              ul.actions
+                li
+                  a(href="educacion.pug", class="button") Leer mas
+        section
+          a(href="#" class="image")
+            img(src="images/fullstack.jpg", alt="", data-position="25% 25%")
+          div.content
+            div.inner
+              h2 Habilidades
+              p Mi conjunto de habilidades incluye una amplia gama de tecnologías y herramientas relacionadas con el desarrollo web y de software. Desde lenguajes de programación hasta frameworks y plataformas, estoy equipado para enfrentar proyectos desafiantes y desarrollar soluciones efectivas.
+              ul.actions
+                li
+                  a(href="habilidades.pug", class="button") Leer mas
+
+      // Two
+      section#two.wrapper.style3.fade-up
+        div.inner
+          h2 Proyectos
+          p Explora mis emocionantes proyectos y descubre cómo abordo desafíos y obstaculos. Me enorgullece ofrecer soluciones innovadoras y de alta calidad en cada proyecto.
+          div.features
+            section
+              a(href="https://www.clubprog.com/")
+                span.icon.solid.major.fa-link
+                h3 Plataforma Virtual - ORACLE PERÚ S.A.C.
+                p Realize una plataforma virtual, donde se venden cursos y capacitaciones, trabaje conWordpress y utilize sus respectivas herramientas, para realizar la parte de catalogo decursos y capacitaciones, actualizacion de las redes sociales de la empresa, certificadosy el sistema de evaluacion.
+            section
+              a(href="https://github.com/cesarmayta/movilidad_back")
+                span.icon.solid.major.fa-code
+                h3 Pagina Web Backend - Movilidad Escolar
+                p Forme parte de un grupo de trabajo, donde se estaba realizando una pagina web sobre movilidad escolar, donde realize la parte vistas, modelos y el matenimiento de la base de datos.
+            section
+              a(href="https://github.com/DiegoLaura/Consecionaria-V")
+                span.icon.solid.major.fa-code
+                h3 Pagina Web - Consecionaria
+                p Realizamos mi equipo y yo una Pagina Web de una concecionaria de autos, lo hicimos en el framework de laravel, trabajamos con una base de datos MySQL, HTML,CSS y PHP.
+            section
+              a(href="https://github.com/DiegoLaura/APK_TeluNova")
+                span.icon.solid.major.fa-code
+                h3 Aplicativo Movil - Telu Nova
+                p Realize una aplicativo movil en Android Studio, donde este jala datos de los sensores teluricos donde estos son almacenados en el servidor/DB web, para luego mostrarselos al cliente por el aplicativo.
+            section
+              a(href="https://github.com/DiegoLaura/terremotito/tree/master/Proyecto%20Integrador/Sismo")
+                span.icon.solid.major.fa-code
+                h3 Pagina Web - Telu Nova
+                p Ayude a realizar la pagina web de Telu Nova, en la implementacion del API REST que se hixo en Django.
+            section
+              a(href="https://github.com/DiegoLaura/Examen3_React_DAE/tree/master/movilidad_front")
+                span.icon.solid.major.fa-code
+                h3 Pagina Web Frontend - Movilidad - Pagos
+                p Realice la parte del Frontend de otra pagina web en la parte de pagos. Lo realice con React lo cual ayudo mucho para el desarrollo de esta parte de la pagina web.
+          ul.actions
+            li
+              a(href="#three", class="button scrolly") Leer mas
+
+      // Three
+      section#three.wrapper.style1.fade-up
+        div.inner
+          h2 Contactame
+          p Creo en la importancia de la comunicación abierta. Siempre estoy dispuesto a escucharte y colaborar contigo para encontrar soluciones.
+          div.split.style1
+            section
+              form(method="post", action="confirmacion.pug")
+                div.fields
+                  div.field.half
+                    label(for="name") Nombre
+                    input(type="text", name="name", id="name")
+                  div.field.half
+                    label(for="email") Correo
+                    input(type="text", name="email", id="email")
+                  div.field
+                    label(for="message") Mensaje
+                    textarea(name="message", id="message", rows="5")
+                ul.actions
+                  li
+                    a(href="", class="button submit") Enviar Mensaje
+            section
+              ul.contact
+                li
+                  h3 Direccion
+                  span ASOC. J.L.B. Y RIVERO
+                    br
+                    SEC VII SPMZ. 4 MZ. B LT.5
+                    br
+                    AREQUIPA - PERU
+                li
+                  h3 Email
+                  a(href="https://mail.google.com/chat/u/0/#chat/dm/3IwN1UAAAAE") diego.laura.m@tecsup.edu.pe
+                li
+                  h3 Celular
+                  span (+51) 903331088
+                li
+                  h3 Social
+                  ul.icons
+                    li
+                      a(href="https://www.facebook.com/profile.php?id=100075913057384", class="icon brands fa-facebook-f")
+                        span.label Facebook
+                    li
+                      a(href="https://github.com/DiegoLaura", class="icon brands fa-github")
+                        span.label GitHub
+                    li
+                      a(href="https://instagram.com/db.lauram?igshid=NGVhN2U2NjQ0Yg==", class="icon brands fa-instagram")
+                        span.label Instagram
+                    li
+                      a(href="https://www.linkedin.com/in/diego-brayan-laura-machaca-8763a8272/", class="icon brands fa-linkedin-in")
+                        span.label LinkedIn
+
+    // Footer
+    footer#footer.wrapper.style1-alt
+      div.inner
+        ul.menu
+          li &copy; Diego. Todos los derechos reservados.
+
+    // Scripts
+    script(src="assets/js/jquery.min.js")
+    script(src="assets/js/jquery.scrollex.min.js")
+    script(src="assets/js/jquery.scrolly.min.js")
+    script(src="assets/js/browser.min.js")
+    script(src="assets/js/breakpoints.min.js")
+    script(src="assets/js/util.js")
+    script(src="assets/js/main.js")

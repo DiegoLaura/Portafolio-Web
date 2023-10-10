@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9", crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js", integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm", crossorigin="anonymous")
+        style
+            // Estilo personalizado para centrar el mensaje de alerta
+            .center-alert
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 100vh // Esto centra verticalmente en la pantalla
+                background-image: url('images/Fondo.jpg') // Agrega la imagen de fondo
+                background-size: cover // Ajusta el tamaño de la imagen para cubrir el contenedor
+            .custom-alert
+                font-weight: bold // Hace que el texto de la alerta sea negrita
+                padding: 20px // Aumenta el espacio interno de la alerta
+                font-size: 24px // Aumenta el tamaño de la letra
+                margin-left: -40% // Mueve el texto ligeramente a la izquierda
+            .alert-warning
+                --bs-alert-color: #000000
+                --bs-alert-bg: #89f1a4
+                --bs-alert-border-color: #000000
+                --bs-alert-link-color: #f30000
+    body.center-alert // Aplicamos la clase center-alert al body
+        .alert.alert-warning.custom-alert.alert-dismissible.fade.show(role="alert")
+            strong Mensaje Enviado!
+            |  Muy pronto nos pondremos en contacto

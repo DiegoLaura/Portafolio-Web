@@ -1,0 +1,59 @@
+doctype html
+html
+    head
+        title Educacion - DL
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+        link(rel="stylesheet", href="assets/css/main.css")
+        noscript
+            link(rel="stylesheet", href="assets/css/noscript.css")
+    body(class="is-preload")
+
+        // Header
+        header#header
+            a(title="Diego Laura", href="index.pug") Carlos
+            nav
+                ul
+                    li
+                        a(href="index.pug") Inicio
+                    li
+                        a(href="educacion.pug", class="active") Educacion
+
+        // Wrapper
+        #wrapper
+
+            // Main
+            section#main.wrapper
+                .inner
+                    section
+                        h2 Educacion
+                        p
+                            span.image.left
+                                img(src="images/LogoTecsup.jpeg", alt="")
+                            br
+                            strong Institución:
+                            |  Tecsup
+                            br
+                            strong Programa Académico:
+                            |  Diseño y Desarrollo de Software
+                            br
+                            strong Año de Inicio:
+                            |  2021
+                            br
+                            strong Año de Finalización (previsto):
+                            |  2024
+
+        // Footer
+        footer#footer1.wrapper.alt
+            .inner
+                ul.menu
+                    li &copy; Diego. Todos los derechos reservados.
+
+    // Scripts
+    script(src="assets/js/jquery.min.js")
+    script(src="assets/js/jquery.scrollex.min.js")
+    script(src="assets/js/jquery.scrolly.min.js")
+    script(src="assets/js/browser.min.js")
+    script(src="assets/js/breakpoints.min.js")
+    script(src="assets/js/util.js")
+    script(src="assets/js/main.js")
